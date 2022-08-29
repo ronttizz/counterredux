@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AddButton from "./components/AddButton";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
+      <div className="buttons">
+        <AddButton num="5" text="Decrease" />
+        <AddButton num="1" text="Decrease" />
+        <AddButton text="Reset" />
+        <AddButton num="1" text="Increase" />
+        <AddButton num="5" text="Increase" />
+      </div>
     </div>
   );
 }
