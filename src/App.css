@@ -38,3 +38,7 @@ body {
   border-radius: 7px;
   width: 8rem;
 }
+
+.button:active {
+  box-shadow: inset 5px 5px grey;
+}
