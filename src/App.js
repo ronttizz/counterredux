@@ -2,10 +2,12 @@ import "./App.css";
 import AddButton from "./components/AddButton";
 import Counter from "./components/Counter";
 
+import { selectCount } from "./features/counter/CounterSlice";
+
 import { useSelector } from "react-redux";
 
 const App = () => {
-  const count = useSelector((state) => state.counter.count);
+  const count = useSelector(selectCount);
 
   return (
     <div className="App">
