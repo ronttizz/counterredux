@@ -1,5 +1,5 @@
-const Counter = () => {
-  return <div className="counter">0</div>;
+const Counter = ({ count }) => {
+  return <div className="counter">{count}</div>;
 };
 
 export default Counter;
