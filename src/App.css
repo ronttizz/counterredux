@@ -40,5 +40,5 @@ body {
 }
 
 .button:active {
-  box-shadow: inset 5px 5px grey;
+  box-shadow: inset -3px -2px 5px grey;
 }
